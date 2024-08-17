@@ -6,7 +6,7 @@ from io import BytesIO
 
 # Function to fetch a GIF from Giphy API
 def fetch_gif(query):
-    api_key = 'RRB1f9qpFlH7gyPTHRuLzBmFY0mpZQ58'  
+    api_key = 'replace_with_your_API'  
     url = f'https://api.giphy.com/v1/gifs/search?q={query}&api_key={api_key}&limit=1'
     response = requests.get(url)
     data = response.json()
